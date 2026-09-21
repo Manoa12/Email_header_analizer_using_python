@@ -1,0 +1,16 @@
+Received: from mx.example.net (mx.example.net [192.0.2.10])
+	by inbound.mailserver.com with ESMTPS id abc123
+	for <user@example.net>; Tue, 08 Sep 2026 10:20:15 +0000
+Received: from mail.example.com (mail.example.com [198.51.100.5])
+	by mx.example.net with ESMTP id def456;
+	Tue, 08 Sep 2026 10:20:14 +0000
+Authentication-Results: inbound.mailserver.com;
+	spf=pass smtp.mailfrom=example.com;
+	dkim=pass header.d=example.com;
+	dmarc=pass header.from=example.com
+Return-Path: <bounce@example.com>
+From: alerts@example.com
+To: user@example.net
+Subject: Security Alert
+Date: Tue, 08 Sep 2026 10:20:14 +0000
+Message-ID: <abc123@example.com>
